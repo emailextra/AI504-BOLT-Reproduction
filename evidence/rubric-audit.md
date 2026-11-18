@@ -14,12 +14,12 @@ Checked against the instructor's final submission and presentation guidelines on
 | P8 original contribution | Source-mask audit and evaluated paired correction; quantitative and concrete error analysis. |
 | P9 additional contribution | Error taxonomy is evaluated alongside the mask study. Whether this meets the highest level is the marker's judgment. |
 | P10 thematic synthesis | Section 2 groups work by novelty definition, representation/rejection, and benchmark comparability. |
-| C1 runnable code | Model code ran in Colab. Final wrappers compile and evidence tests pass. A fresh GPU rerun of the reorganized entry point remains unperformed. |
+| C1 runnable code | Model code ran in Colab. Final wrappers compile; five regression checks and independent data audit pass on a fresh GitHub Linux runner. A fresh GPU rerun of the reorganized entry point remains unperformed. |
 | C2 README | All seven required topics appear in order. |
 | C3 rerun tolerance | Expected scores and tolerance are documented. Independent model rerun remains unperformed. |
 | C4 provenance | README and author_runner.py distinguish reused training implementation and project tooling. |
 | C5 command per result | Each report experiment and all derived tables have named commands and shell wrappers. |
-| C6 seeds and pins | Seed 2025 fixed, separate framework requirements pinned, recorded package inventory preserved. Transitive versions are recorded in the evidence inventory. |
+| C6 seeds and pins | Seed 2025 fixed, separate framework requirements pinned, recorded package inventory preserved. Both requirements files pin the complete recorded transitive dependency inventories. |
 | C7 checks | One unittest command checks metrics, label-mask regression, and prediction integrity. |
 | C8 every number reproducible | Saved metrics and measured runtimes trace to scripts and raw evidence. Full model rerun has not been independently repeated. |
 | C9 comments | Project functions have purpose docstrings; inherited code is attributed. |

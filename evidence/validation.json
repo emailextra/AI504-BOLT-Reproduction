@@ -10,10 +10,16 @@
   "embedded_source_parity": "passed",
   "fresh_gpu_rerun_of_reorganized_notebook": "pending",
   "final_gpu_training_evidence": "preserved in results and executed notebook",
-  "unit_checks_passed": 4,
+  "unit_checks_passed": 5,
   "extracted_zip_standard_library_checks": "passed",
   "presentation_slides": 13,
   "presentation_rehearsal_seconds": 900,
   "presentation_native_export": "PowerPoint PDF export and visual review completed",
-  "repository_url": "https://github.com/emailextra/AI504-BOLT-Reproduction"
+  "repository_url": "https://github.com/emailextra/AI504-BOLT-Reproduction",
+  "clean_linux_verification": "passed",
+  "clean_linux_verification_url": "https://github.com/emailextra/AI504-BOLT-Reproduction/actions/runs/44260136840",
+  "environment_pins": {
+    "pytorch_packages": 77,
+    "tensorflow_packages": 72
+  }
 }

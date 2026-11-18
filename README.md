@@ -10,7 +10,7 @@ The main reproduction target is DeepUNK on BANKING77 at labeled ratio 0.10, know
 
 The intended model runtime is Linux, Python 3.11, and an NVIDIA Tesla T4 or equivalent CUDA GPU. Successful evidence used a T4 with 15,360 MiB total GPU memory. Use BOLT_Colab_Final.ipynb for isolated GPU environment installation and actual PyTorch and TensorFlow LSTM checks. Its first cell contains the project scripts, so no input ZIP is needed.
 
-requirements-torch.txt and requirements-tensorflow.txt pin the model dependencies. TensorFlow CUDA libraries are loaded only in its subprocess. The training launcher uses the pinned Python executable explicitly. Recorded package inventories are in results/environment.txt. Successful model runs have been validated in Colab; the final reorganized launcher has syntax and evidence checks, and awaits a fresh model rerun.
+requirements-torch.txt and requirements-tensorflow.txt pin the complete successful environment inventories, including transitive dependencies, from results/environment.txt. TensorFlow CUDA libraries are loaded only in its subprocess. The training launcher uses the pinned Python executable explicitly. Recorded package inventories are in results/environment.txt. Successful model runs have been validated in Colab; the final reorganized launcher has syntax and evidence checks, and awaits a fresh model rerun.
 
 For local Linux use, install uv==0.9.22 and follow this setup from the repository root.
 
