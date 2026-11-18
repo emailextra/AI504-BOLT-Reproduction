@@ -99,7 +99,7 @@ export async function build(p) {
 
   s=base(p,'Tests and traceable experiment evidence','Code | tests/test_reproduction.py; results/manifest.csv',8);
   text(s,'python -m unittest discover -s tests -v',64,175,1120,65,31,C.ink,false,'Courier New');
-  text(s,'Four checks cover the mask regression, recorded data counts, hand-calculated metrics, and saved predictions.',64,285,1120,110,30);
+  text(s,'Checks cover the mask regression, recorded data counts, metrics, saved predictions, and portable paths.',64,285,1120,110,30);
   text(s,'16 metric rows verified\n3,080 test predictions per row',64,445,1120,115,40,C.blue,true);
   note(s,30,'Show the actual test output. Explain that checks establish internal consistency and input provenance. They do not establish convergence or independent replication of all training results. Mention the GitHub verification run and immutable evidence checksums.',['tests/test_reproduction.py','results/tables/prediction_audit.csv','results/manifest.csv']);
 

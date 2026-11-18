@@ -53,7 +53,7 @@ def all_tables(output):
     published = {(r["method"], r["known_ratio"]): r for r in read(ROOT / "code/published.csv")}
     audit, runtime, errors, paired, comparisons, folds, examples = [], [], [], [], [], [], []
     for record in sorted(output.rglob("run.json")):
-        if "work" in record.parts:
+        if "work" in record.relative_to(output).parts:
             continue
         directory = record.parent
         config = json.loads(record.read_text())
@@ -115,7 +115,7 @@ def manifest(output):
     """Record SHA-256 for immutable saved evidence and source provenance."""
     rows=[]
     for path in sorted(output.rglob("*")):
-        if path.is_file() and "work" not in path.parts and "tables" not in path.parts and path.name != "manifest.csv":
+        if path.is_file() and "work" not in path.relative_to(output).parts and "tables" not in path.relative_to(output).parts and path.name != "manifest.csv":
             rows.append(dict(path=path.relative_to(output).as_posix(), sha256=hashlib.sha256(path.read_bytes()).hexdigest()))
     write(output / "manifest.csv", rows)
 
