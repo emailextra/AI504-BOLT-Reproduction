@@ -11,7 +11,7 @@ ROOT = Path(__file__).resolve().parents[1]
 def package():
     """Copy final artifacts using the allocated group number when available."""
     details = json.loads((ROOT / 'submission-details.json').read_text())
-    number = str(details.get('group_number') or 'NN')
+    number = str(details['group_number'])
     if not re.fullmatch(r'[A-Za-z0-9_-]+', number):
         raise ValueError('Group number must contain letters, digits, underscores or hyphens')
     stem = 'AI504-A2-Group' + number
@@ -33,8 +33,6 @@ def package():
                 bundle.write(source, Path(stem) / source.relative_to(folder))
     print('Shared-folder contents:', folder)
     print('Blackboard copies:', blackboard)
-    if number == 'NN':
-        print('NN is the group-number placeholder approved for this preparation stage.')
 
 
 if __name__ == '__main__':

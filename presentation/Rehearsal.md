@@ -1,6 +1,6 @@
 # Presentation rehearsal and individual discussion
 
-The PowerPoint contains thirteen slides and speaker notes timed to fifteen minutes. The PDF is the slide submission copy. Enter the actual group number, names, and student IDs on the opening slide when those details are available.
+The PowerPoint contains thirteen slides and speaker notes timed to fifteen minutes. The PDF is the slide submission copy. The opening slide identifies Group 4 and all four members. Each slide's notes identify its presenter.
 
 | Block | Slides | Time |
 | --- | --- | --- |
@@ -10,7 +10,7 @@ The PowerPoint contains thirteen slides and speaker notes timed to fifteen minut
 | Report | 9–12 | 4 minutes 30 seconds |
 | Closing | 13 | 30 seconds |
 
-In PowerPoint, use Presenter View to read the notes. Allocate the slides so every member speaks for at least three minutes. Rehearse the complete presentation with a timer. The Code block includes time for showing a live command or an authentic screen recording.
+In PowerPoint, use Presenter View to read the notes. The speaking allocation is Reem, slides 1–3, 3 minutes 30 seconds; Shaza, slides 4–6, 3 minutes; Amal, slides 7–9, 5 minutes; Roudha, slides 10–13, 3 minutes 30 seconds. Rehearse the complete presentation with a timer. The Code block includes time for showing a live command or an authentic screen recording.
 
 ## Live demonstration
 

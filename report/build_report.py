@@ -152,9 +152,9 @@ def render():
         contribution.append([member.get("name",""),member.get("id",""),member.get("responsibilities",""),
                              member.get("sections",""),member.get("code",""),str(member.get("percent","")),
                              member.get("agreed_name","")])
-    if not contribution:
-        contribution=[["Pending","Pending","To be agreed","To be agreed","To be agreed","", "Unsigned"]]
-    blocks["[TABLE_CONTRIBUTION]"]=[table(["Name","Student ID","Responsibilities","Report sections","Code files","Share %","Agreed name"],contribution,[.14,.13,.2,.14,.16,.09,.14])]
+    if not contribution or sum(member["percent"] for member in members) != 100:
+        raise ValueError("A complete agreed contribution allocation totaling 100% is required")
+    blocks["[TABLE_CONTRIBUTION]"]=[table(["Name","Student ID","Responsibilities","Report sections","Code files","Share %","Agreed name"],contribution,[.14,.13,.19,.10,.20,.08,.16])]
     story=[]
     text=(ROOT/"report/Report.md").read_text(encoding="utf-8-sig")
     paragraphs=re.split(r"\n\s*\n",text)
@@ -172,6 +172,11 @@ def render():
             story.append(para(block[3:],"h1"))
         elif block.startswith("AI504 "):
             story.append(Paragraph("<br/>".join(html.escape(line.strip()) for line in block.splitlines() if line.strip()), styles["subtitle"]))
+            if members:
+                story.append(para("Group " + str(int(details["group_number"])), "subtitle"))
+                for start in range(0, len(members), 2):
+                    identity = " · ".join(member["name"] + " (" + member["id"] + ")" for member in members[start:start + 2])
+                    story.append(para(identity, "subtitle"))
             if details.get("repository_url"):
                 story.append(para("Repository " + details["repository_url"], "subtitle"))
         else:
@@ -191,7 +196,7 @@ def render():
     doc=SimpleDocTemplate(str(ROOT/"Report.pdf"),pagesize=A4,leftMargin=22*mm,rightMargin=22*mm,
                           topMargin=23*mm,bottomMargin=22*mm,
                           title="Reproducing BOLT under Limited Supervision for Banking Intents",
-                          author="AI504 reproduction study",pageCompression=1)
+                          author=", ".join(member["name"] for member in members),pageCompression=1)
     doc.build(story,onFirstPage=page,onLaterPages=page)
     print("Rendered",ROOT/"Report.pdf")
 

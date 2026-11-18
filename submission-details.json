@@ -1,5 +1,43 @@
 {
-  "group_number": "",
-  "members": [],
-  "repository_url": "https://github.com/emailextra/AI504-BOLT-Reproduction"
+  "group_number": "04",
+  "members": [
+    {
+      "name": "Reem Alabdulla",
+      "id": "26000605",
+      "responsibilities": "Paper selection and literature review",
+      "sections": "1, 2",
+      "code": "Not applicable",
+      "percent": 25,
+      "agreed_name": "Reem Alabdulla"
+    },
+    {
+      "name": "Shaza Mahmod Badr",
+      "id": "26001544",
+      "responsibilities": "Implementation and environment setup",
+      "sections": "3",
+      "code": "train.py; author_runner.py; notebook; requirements",
+      "percent": 25,
+      "agreed_name": "Shaza Mahmod Badr"
+    },
+    {
+      "name": "Amal Alhashmi",
+      "id": "26000656",
+      "responsibilities": "Experiments and validation",
+      "sections": "4",
+      "code": "analyze_results.py; tests/",
+      "percent": 25,
+      "agreed_name": "Amal Alhashmi"
+    },
+    {
+      "name": "Roudha Alblooshi",
+      "id": "26000603",
+      "responsibilities": "Error analysis and report integration",
+      "sections": "5, 6",
+      "code": "analyze_results.py (errors); build_report.py",
+      "percent": 25,
+      "agreed_name": "Roudha Alblooshi"
+    }
+  ],
+  "repository_url": "https://github.com/emailextra/AI504-BOLT-Reproduction",
+  "contributions_confirmed": true
 }

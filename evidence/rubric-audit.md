@@ -39,11 +39,11 @@ Checked against the instructor's final submission and presentation guidelines on
 
 Three of four DeepUNK comparisons fall within two points of the paper. The fourth differs by 2.97 points. The study therefore does not establish all the report rubric's Excellent performance conditions, and it makes no claim of exceeding published results. Successful reproduction of an observed subset remains scientifically valid.
 
-Author IDs, group allocation, typed contribution agreement, and instructor paper approval cannot be inferred from experiment files. Their fields are kept explicit. The contribution statement remains unsigned.
+The user confirmed Group 4, all four member names and IDs, equal 25% shares, the listed roles, and typed agreement names. Instructor paper approval remains an administrative matter outside the experiment evidence.
 
 
 ## Final submission preparation
 
 The public repository is https://github.com/emailextra/AI504-BOLT-Reproduction. Its submission tag identifies the revision for marking. Report.pdf links to the repository on the first page. Slides.pptx and Slides.pdf contain thirteen slides with evidence-pointer footers and a fifteen-minute rehearsal schedule in the speaker notes. presentation/Rehearsal.md covers the live demonstration and individual discussion. scripts/package_submission.py creates the requested folder and Blackboard filenames.
 
-The submitting user explicitly deferred group allocation, member identity and contribution signatures. NN remains a filename placeholder. The package does not assert that those administrative fields or a live presentation have been completed. Actual marks depend on the evidence and the marker's assessment, including the documented result discrepancy.
+Group 04 filenames, confirmed member identities, equal contributions, and typed agreements are complete. The presentation notes allocate at least three minutes to every member within fifteen minutes. Actual presentation delivery, Q&A, and grading occur in the course session.

@@ -38,15 +38,16 @@ function note(slide,seconds,content,sources=[]) {
   slide.speakerNotes.text=`Target duration ${seconds} seconds.\n\n${content}\n\nEvidence and sources\n${sources.join('\n')}`;
 }
 
-export async function build(p) {
+export async function build(p, details) {
   p.theme.defaultFont=FONT;
   if(p.slides.items.length) p.slides.delete(p.slides.items.map(s=>s.id));
-  let s=base(p,'Reproducing BOLT on BANKING77','AI504 Assignment 2 · Group number, names and IDs to be entered',1);
-  text(s,'Open-set intent classification\nand a supervision-mask audit',64,205,1100,160,56,C.ink,true);
-  text(s,'BOLT: Benchmarking Open-World Learning\nfor Text Classification',64,385,1120,82,29,C.blue,true);
-  text(s,'Chuan Qin · Xi Chen · Jinpeng Li · Hengshu Zhu\nFindings of ACL 2026',64,485,1100,72,25,C.muted);
-  text(s,'Ten DeepUNK trials and a paired five-epoch KNNCon study',64,580,1120,42,25,C.blue);
-  note(s,60,'Introduce the original paper and explain the bounded reproduction. Enter actual group and member identification before presenting. Each member must speak for at least three minutes. Explain that requests can be meaningful banking questions while their intent category is unknown to the classifier.',[PAPER]);
+  let s=base(p,'Reproducing BOLT on BANKING77','AI504 Assignment 2 · Group '+Number(details.group_number),1);
+  text(s,'Open-set intent classification\nand a supervision-mask audit',64,175,1100,145,50,C.ink,true);
+  text(s,'BOLT: Benchmarking Open-World Learning\nfor Text Classification',64,340,1120,82,29,C.blue,true);
+  text(s,'Chuan Qin · Xi Chen · Jinpeng Li · Hengshu Zhu\nFindings of ACL 2026',64,435,1100,72,25,C.muted);
+  const identities=details.members.map(m=>m.name+' ('+m.id+')');
+  text(s,identities.slice(0,2).join(' · ')+'\n'+identities.slice(2).join(' · '),64,550,1152,86,22,C.ink);
+  note(s,60,'Introduce Group 4 and the original paper, then explain the bounded reproduction. Explain that requests can be meaningful banking questions while their intent category is unknown to the classifier.',[PAPER]);
 
   s=base(p,'The selected DeepUNK claim','Project | Report §1 and Table 1; code/published.csv',2);
   text(s,'At 10% labeled data, increasing known classes changes both recognition and rejection.',64,150,1120,78,29);
@@ -54,7 +55,7 @@ export async function build(p) {
     ['25%','Known-class F1','37.49'],['25%','Unknown-class F1','4.16'],
     ['50%','Known-class F1','48.99'],['50%','Unknown-class F1','31.21']],255,300,[240,570,342]);
   text(s,'We test these four values on the five official class partitions.',64,580,1120,54,26,C.blue);
-  note(s,80,'State the claim in one sentence with dataset, label ratio, class ratios, and headline numbers. Explain that our target is a limited BANKING77 result. Both published DeepUNK metrics increase for this change. Do not generalize this trend to all BOLT methods.',[PAPER+' Tables S4 and S7','Report §1']);
+  note(s,75,'State the claim in one sentence with dataset, label ratio, class ratios, and headline numbers. Explain that our target is a limited BANKING77 result. Both published DeepUNK metrics increase for this change. Do not generalize this trend to all BOLT methods.',[PAPER+' Tables S4 and S7','Report §1']);
 
   s=base(p,'Related work and the implementation gap','Project | Report §2; report/references.bib; Papers/',3);
   text(s,'Novelty in text classification',64,165,1120,45,30,C.blue,true);
@@ -74,7 +75,7 @@ export async function build(p) {
     ['Supervision and seed','Nominal labeled ratio 0.10; seed 2025'],
     ['Hardware','Colab Tesla T4; isolated Python 3.11 environments']],175,365,[320,832]);
   text(s,'Fold standard deviation measures variation in class composition.',64,568,1120,55,26,C.blue);
-  note(s,75,'Explain the known inventory and pooled unknown class. Distinguish ten main DeepUNK trials from two KNNCon sensitivity runs. DeepUNK uses GloVe and BiLSTM in the inspected implementation. KNNCon fine-tunes BERT. Describe fixed source revision and why fold variation is different from random-seed variation.',[PAPER,'Report §§3.1–3.4','results/environment.txt']);
+  note(s,80,'Explain the known inventory and pooled unknown class. Distinguish ten main DeepUNK trials from two KNNCon sensitivity runs. DeepUNK uses GloVe and BiLSTM in the inspected implementation. KNNCon fine-tunes BERT. Describe fixed source revision and why fold variation is different from random-seed variation.',[PAPER,'Report §§3.1–3.4','results/environment.txt']);
 
   s=base(p,'The released label filter changes supervision','Project | Report §§3.1–3.2 and 4.2; results/tables/mask_audit.csv',5);
   text(s,'Released filter: .astype(bool)\nCorrected filter: .eq("True")',64,165,1120,100,30,C.blue,false,'Courier New');
@@ -148,5 +149,11 @@ export async function build(p) {
   text(s,REPO,64,435,1120,90,28,C.blue);
   text(s,'Questions and individual discussion',64,565,1120,50,28,C.muted);
   note(s,30,'Close with one verdict and the repository. Invite the ten-minute Q&A. Every member should be ready to explain a part they worked on and another part of the experiment. Point the marker to the report, source, or saved result for each answer.',[REPO,'Report §6']);
+  const speakers=[0,0,0,1,1,1,2,2,2,3,3,3,3];
+  for (let i=0;i<p.slides.items.length;i++) {
+    const member=details.members[speakers[i]];
+    const slide=p.slides.items[i];
+    slide.speakerNotes.text='Presenter '+member.name+' ('+member.id+').\n\n'+slide.speakerNotes.text;
+  }
   return {slides:p.slides.items.length,totalSeconds:900};
 }

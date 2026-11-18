@@ -86,7 +86,7 @@ The successful GPU runs used isolated frameworks and PyArrow 17.0.0 with NumPy 1
 
 Report.pdf is the rendered research report. report/ contains editable report text and figures. code/, scripts/, tests/, and pinned requirements define the reproduction. results/ holds saved trial evidence, derived tables, and checksums. Papers/ contains the original study and four significant cited papers. evidence/ contains the executed notebook, three additional cited papers, and the instructor's guidelines. submission-details.json holds fields for the submitting student's identification and agreed contribution.
 
-The contribution table in the report remains unsigned pending author identification and agreement. Rebuild it after entering the actual members and percentages. Runtime logging does not measure human effort or financial charges.
+Group 4 consists of Reem Alabdulla (26000605), Shaza Mahmod Badr (26001544), Amal Alhashmi (26000656), and Roudha Alblooshi (26000603). The group confirmed equal 25% contributions and the typed agreements shown on the report's last page. Runtime logging does not measure human effort or financial charges.
 
 ## Rebuilding the report
 
@@ -100,4 +100,4 @@ The final marked revision is tagged submission. To retrieve that revision, use `
 
 Slides.pptx is the editable thirteen-slide presentation. Slides.pdf is the submission export. Each content slide carries its rubric criterion and evidence location. Speaker notes give the fifteen-minute schedule, and presentation/Rehearsal.md contains the live demonstration commands and Q&A preparation.
 
-Run `python scripts/package_submission.py` to generate the required shared-folder structure under submission/ and the Blackboard filenames under submission/Blackboard/. The group-number placeholder is NN until the actual allocation is entered in submission-details.json. The package includes five cited paper PDFs. Member details, agreed percentages, and typed signatures remain for the actual submitting members to complete.
+Run `python scripts/package_submission.py` to generate the required shared-folder structure under submission/ and the Blackboard filenames under submission/Blackboard/. The group number is 04, so the report and slides use the AI504-A2-Group04 filenames. The shared-folder package includes five cited paper PDFs. submission-details.json contains the confirmed member details, 25% shares, and typed agreements.

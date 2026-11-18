@@ -187,6 +187,6 @@ OpenAI Codex assisted with literature searches, code inspection, experiment impl
 
 ## Contribution statement
 
-The experiment provenance and code attribution are documented in the README and source files. Student names, IDs, allocated group number, agreed percentages, and typed signatures must be entered by the submitting member or members. No agreement or signature is inferred from AI assistance.
+Group 4 confirms the responsibilities and equal contribution shares shown below. Each member's typed name records agreement with this statement. The README and source files identify reused code and AI assistance.
 
 [TABLE_CONTRIBUTION]

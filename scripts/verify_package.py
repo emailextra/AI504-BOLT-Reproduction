@@ -37,11 +37,28 @@ def verify(mask_audit=None):
             path = ROOT / "results" / row["path"]
             if hashlib.sha256(path.read_bytes()).hexdigest() != row["sha256"]:
                 raise ValueError(f"Raw evidence changed: {row['path']}")
+    details = json.loads((ROOT / "submission-details.json").read_text())
+    members = details["members"]
+    if len(members) != 4 or sum(member["percent"] for member in members) != 100:
+        raise ValueError("Expected four members with contributions totaling 100%")
+    if any(member["agreed_name"] != member["name"] for member in members):
+        raise ValueError("Contribution agreement names must match the confirmed members")
     with zipfile.ZipFile(ROOT / "Slides.pptx") as archive:
         slides = sorted(n for n in archive.namelist() if re.fullmatch(r"ppt/slides/slide\d+\.xml", n))
         notes = [n for n in archive.namelist() if re.fullmatch(r"ppt/notesSlides/notesSlide\d+\.xml", n)]
         if len(slides) != 13 or len(notes) != 13:
             raise ValueError("Expected thirteen slides with speaker notes")
+        cover = " ".join(ET.fromstring(archive.read("ppt/slides/slide1.xml")).itertext())
+        if any(member["name"] not in cover or member["id"] not in cover for member in members):
+            raise ValueError("Member identities missing from presentation cover")
+        speaking = {member["name"]: 0 for member in members}
+        for name in notes:
+            note_text = " ".join(ET.fromstring(archive.read(name)).itertext())
+            duration = int(re.search(r"Target duration (\d+) seconds", note_text).group(1))
+            presenter = next(member["name"] for member in members if "Presenter " + member["name"] in note_text)
+            speaking[presenter] += duration
+        if sum(speaking.values()) != 900 or min(speaking.values()) < 180:
+            raise ValueError("Presentation must total fifteen minutes with at least three minutes per member")
         for name in slides:
             text = " ".join(ET.fromstring(archive.read(name)).itertext())
             if "Report" not in text and "AI504" not in text and "Project" not in text and "Code" not in text:
