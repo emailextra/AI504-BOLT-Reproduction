@@ -1,0 +1,15 @@
+{
+  "report_pages": 11,
+  "report_words_excluding_page_headers": 4638,
+  "prediction_metric_rows_verified": 16,
+  "test_predictions_per_row": 3080,
+  "main_deepunk_trials": 10,
+  "paired_knncon_trials": 2,
+  "reduced_trials": 1,
+  "final_notebook_syntax": "passed",
+  "embedded_source_parity": "passed",
+  "fresh_gpu_rerun_of_reorganized_notebook": "pending",
+  "final_gpu_training_evidence": "preserved in results and executed notebook",
+  "unit_checks_passed": 4,
+  "extracted_zip_standard_library_checks": "passed"
+}

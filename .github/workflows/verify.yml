@@ -1,0 +1,26 @@
+name: Verify reproduction evidence
+on:
+  push:
+  workflow_dispatch:
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Verify package and frozen evidence
+        run: python scripts/verify_package.py
+      - name: Recompute report results and run regression tests
+        run: python -m unittest discover -s tests -v
+      - name: Fetch pinned author release
+        run: python code/train.py prepare
+      - name: Check method instrumentation and data alignment
+        run: python code/author_runner.py check --upstream .bolt
+      - name: Independently audit upstream supervision masks
+        run: |
+          python code/author_runner.py audit --upstream .bolt --output .ci-data-audit
+          python scripts/verify_package.py --mask-audit .ci-data-audit/table_mask_audit.csv
