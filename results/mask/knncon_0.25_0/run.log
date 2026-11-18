@@ -1,0 +1,103 @@
+Using the `WANDB_DISABLED` environment variable is deprecated and will be removed in v5. Use the --report_to flag to control the integrations used for logging result (for instance --report_to none).
+Using the `WANDB_DISABLED` environment variable is deprecated and will be removed in v5. Use the --report_to flag to control the integrations used for logging result (for instance --report_to none).
+/content/bolt-reproduction-gpu/results/work/mask/knncon_0.25_0/KnnCon/model.py:622: SyntaxWarning: "is not" with a literal. Did you mean "!="?
+  if stage is not 'sup' or mode == 'finetune':
+/content/bolt-reproduction-gpu/.venv-torch/lib/python3.11/site-packages/huggingface_hub/file_download.py:949: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+Some weights of the model checkpoint at google-bert/bert-base-uncased were not used when initializing BertModel: ['cls.predictions.transform.dense.weight', 'cls.predictions.transform.LayerNorm.weight', 'cls.predictions.transform.LayerNorm.bias', 'cls.seq_relationship.weight', 'cls.predictions.bias', 'cls.seq_relationship.bias', 'cls.predictions.transform.dense.bias']
+- This IS expected if you are initializing BertModel from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing BertModel from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of the model checkpoint at google-bert/bert-base-uncased were not used when initializing BertModel: ['cls.predictions.transform.dense.weight', 'cls.predictions.transform.LayerNorm.weight', 'cls.predictions.transform.LayerNorm.bias', 'cls.seq_relationship.weight', 'cls.predictions.bias', 'cls.seq_relationship.bias', 'cls.predictions.transform.dense.bias']
+- This IS expected if you are initializing BertModel from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing BertModel from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Map:   0%|          | 0/229 [00:00<?, ? examples/s]Map: 100%|██████████| 229/229 [00:00<00:00, 6819.13 examples/s]
+Map:   0%|          | 0/28 [00:00<?, ? examples/s]Map: 100%|██████████| 28/28 [00:00<00:00, 3825.80 examples/s]
+Map:   0%|          | 0/742 [00:00<?, ? examples/s]Map: 100%|██████████| 742/742 [00:00<00:00, 7851.41 examples/s]
+Map:   0%|          | 0/3080 [00:00<?, ? examples/s]Map:  32%|███▏      | 1000/3080 [00:00<00:00, 8953.45 examples/s]Map:  65%|██████▍   | 2000/3080 [00:00<00:00, 8294.07 examples/s]Map:  97%|█████████▋| 3000/3080 [00:00<00:00, 8566.13 examples/s]Map: 100%|██████████| 3080/3080 [00:00<00:00, 8411.95 examples/s]
+Iter (sup_loss):   0%|          | 0/15 [00:00<?, ?it/s]Iter (sup_cont_loss=3.422):   0%|          | 0/15 [00:00<?, ?it/s]Iter (sup_cont_loss=3.422):   7%|▋         | 1/15 [00:01<00:14,  1.01s/it]Iter (sup_cont_loss=3.456):   7%|▋         | 1/15 [00:01<00:14,  1.01s/it]Iter (sup_cont_loss=3.456):  13%|█▎        | 2/15 [00:01<00:10,  1.23it/s]Iter (sup_cont_loss=3.431):  13%|█▎        | 2/15 [00:02<00:10,  1.23it/s]Iter (sup_cont_loss=3.431):  20%|██        | 3/15 [00:02<00:09,  1.33it/s]Iter (sup_cont_loss=3.418):  20%|██        | 3/15 [00:02<00:09,  1.33it/s]Iter (sup_cont_loss=3.418):  27%|██▋       | 4/15 [00:03<00:07,  1.38it/s]Iter (sup_cont_loss=3.492):  27%|██▋       | 4/15 [00:03<00:07,  1.38it/s]Iter (sup_cont_loss=3.492):  33%|███▎      | 5/15 [00:03<00:07,  1.41it/s]Iter (sup_cont_loss=3.419):  33%|███▎      | 5/15 [00:04<00:07,  1.41it/s]Iter (sup_cont_loss=3.419):  40%|████      | 6/15 [00:04<00:06,  1.42it/s]Iter (sup_cont_loss=3.466):  40%|████      | 6/15 [00:04<00:06,  1.42it/s]Iter (sup_cont_loss=3.466):  47%|████▋     | 7/15 [00:05<00:05,  1.40it/s]Iter (sup_cont_loss=3.467):  47%|████▋     | 7/15 [00:05<00:05,  1.40it/s]Iter (sup_cont_loss=3.467):  53%|█████▎    | 8/15 [00:05<00:04,  1.42it/s]Iter (sup_cont_loss=3.423):  53%|█████▎    | 8/15 [00:06<00:04,  1.42it/s]Iter (sup_cont_loss=3.423):  60%|██████    | 9/15 [00:06<00:04,  1.42it/s]Iter (sup_cont_loss=3.458):  60%|██████    | 9/15 [00:07<00:04,  1.42it/s]Iter (sup_cont_loss=3.458):  67%|██████▋   | 10/15 [00:07<00:03,  1.43it/s]Iter (sup_cont_loss=3.396):  67%|██████▋   | 10/15 [00:07<00:03,  1.43it/s]Iter (sup_cont_loss=3.396):  73%|███████▎  | 11/15 [00:07<00:02,  1.42it/s]Iter (sup_cont_loss=3.428):  73%|███████▎  | 11/15 [00:08<00:02,  1.42it/s]Iter (sup_cont_loss=3.428):  80%|████████  | 12/15 [00:08<00:02,  1.42it/s]Iter (sup_cont_loss=3.390):  80%|████████  | 12/15 [00:09<00:02,  1.42it/s]Iter (sup_cont_loss=3.390):  87%|████████▋ | 13/15 [00:09<00:01,  1.43it/s]Iter (sup_cont_loss=3.427):  87%|████████▋ | 13/15 [00:09<00:01,  1.43it/s]Iter (sup_cont_loss=3.427):  93%|█████████▎| 14/15 [00:10<00:00,  1.44it/s]Iter (sup_cont_loss=3.316):  93%|█████████▎| 14/15 [00:10<00:00,  1.44it/s]Iter (sup_cont_loss=3.316): 100%|██████████| 15/15 [00:10<00:00,  1.77it/s]Iter (sup_cont_loss=3.316): 100%|██████████| 15/15 [00:10<00:00,  1.46it/s]
+Epoch: [0]: Loss 3.4273
+Iter (sup_loss): 100%|██████████| 15/15 [00:00<?, ?it/s]Iter (sup_cont_loss=3.427): 100%|██████████| 15/15 [00:00<?, ?it/s]Iter (sup_cont_loss=3.427): : 16it [00:00,  1.45it/s]              Iter (sup_cont_loss=3.479): : 16it [00:01,  1.45it/s]Iter (sup_cont_loss=3.479): : 17it [00:01,  1.44it/s]Iter (sup_cont_loss=3.435): : 17it [00:01,  1.44it/s]Iter (sup_cont_loss=3.435): : 18it [00:02,  1.45it/s]Iter (sup_cont_loss=3.462): : 18it [00:02,  1.45it/s]Iter (sup_cont_loss=3.462): : 19it [00:02,  1.44it/s]Iter (sup_cont_loss=3.376): : 19it [00:03,  1.44it/s]Iter (sup_cont_loss=3.376): : 20it [00:03,  1.43it/s]Iter (sup_cont_loss=3.443): : 20it [00:03,  1.43it/s]Iter (sup_cont_loss=3.443): : 21it [00:04,  1.44it/s]Iter (sup_cont_loss=3.459): : 21it [00:04,  1.44it/s]Iter (sup_cont_loss=3.459): : 22it [00:04,  1.44it/s]Iter (sup_cont_loss=3.378): : 22it [00:05,  1.44it/s]Iter (sup_cont_loss=3.378): : 23it [00:05,  1.43it/s]Iter (sup_cont_loss=3.433): : 23it [00:06,  1.43it/s]Iter (sup_cont_loss=3.433): : 24it [00:06,  1.44it/s]Iter (sup_cont_loss=3.366): : 24it [00:06,  1.44it/s]Iter (sup_cont_loss=3.366): : 25it [00:06,  1.43it/s]Iter (sup_cont_loss=3.425): : 25it [00:07,  1.43it/s]Iter (sup_cont_loss=3.425): : 26it [00:07,  1.44it/s]Iter (sup_cont_loss=3.394): : 26it [00:08,  1.44it/s]Iter (sup_cont_loss=3.394): : 27it [00:08,  1.43it/s]Iter (sup_cont_loss=3.391): : 27it [00:08,  1.43it/s]Iter (sup_cont_loss=3.391): : 28it [00:09,  1.43it/s]Iter (sup_cont_loss=3.406): : 28it [00:09,  1.43it/s]Iter (sup_cont_loss=3.406): : 29it [00:09,  1.42it/s]Iter (sup_cont_loss=3.482): : 29it [00:09,  1.42it/s]Iter (sup_cont_loss=3.482): : 30it [00:10,  1.75it/s]Iter (sup_cont_loss=3.482): : 30it [00:10,  1.50it/s]
+Epoch: [1]: Loss 3.4255
+Iter (sup_loss): 30it [00:00, ?it/s]Iter (sup_cont_loss=3.481): : 30it [00:00, ?it/s]Iter (sup_cont_loss=3.481): : 31it [00:00,  1.42it/s]Iter (sup_cont_loss=3.398): : 31it [00:01,  1.42it/s]Iter (sup_cont_loss=3.398): : 32it [00:01,  1.42it/s]Iter (sup_cont_loss=3.290): : 32it [00:01,  1.42it/s]Iter (sup_cont_loss=3.290): : 33it [00:02,  1.42it/s]Iter (sup_cont_loss=3.369): : 33it [00:02,  1.42it/s]Iter (sup_cont_loss=3.369): : 34it [00:02,  1.43it/s]Iter (sup_cont_loss=3.404): : 34it [00:03,  1.43it/s]Iter (sup_cont_loss=3.404): : 35it [00:03,  1.43it/s]Iter (sup_cont_loss=3.394): : 35it [00:03,  1.43it/s]Iter (sup_cont_loss=3.394): : 36it [00:04,  1.43it/s]Iter (sup_cont_loss=3.391): : 36it [00:04,  1.43it/s]Iter (sup_cont_loss=3.391): : 37it [00:04,  1.43it/s]Iter (sup_cont_loss=3.395): : 37it [00:05,  1.43it/s]Iter (sup_cont_loss=3.395): : 38it [00:05,  1.43it/s]Iter (sup_cont_loss=3.450): : 38it [00:06,  1.43it/s]Iter (sup_cont_loss=3.450): : 39it [00:06,  1.43it/s]Iter (sup_cont_loss=3.437): : 39it [00:06,  1.43it/s]Iter (sup_cont_loss=3.437): : 40it [00:07,  1.43it/s]Iter (sup_cont_loss=3.353): : 40it [00:07,  1.43it/s]Iter (sup_cont_loss=3.353): : 41it [00:07,  1.42it/s]Iter (sup_cont_loss=3.355): : 41it [00:08,  1.42it/s]Iter (sup_cont_loss=3.355): : 42it [00:08,  1.42it/s]Iter (sup_cont_loss=3.286): : 42it [00:08,  1.42it/s]Iter (sup_cont_loss=3.286): : 43it [00:09,  1.42it/s]Iter (sup_cont_loss=3.297): : 43it [00:09,  1.42it/s]Iter (sup_cont_loss=3.297): : 44it [00:09,  1.42it/s]Iter (sup_cont_loss=3.312): : 44it [00:09,  1.42it/s]Iter (sup_cont_loss=3.312): : 45it [00:10,  1.76it/s]Iter (sup_cont_loss=3.312): : 45it [00:10,  1.49it/s]
+Epoch: [2]: Loss 3.4084
+Iter (sup_loss): 45it [00:00, ?it/s]Iter (sup_cont_loss=3.240): : 45it [00:00, ?it/s]Iter (sup_cont_loss=3.240): : 46it [00:00,  1.42it/s]Iter (sup_cont_loss=3.343): : 46it [00:01,  1.42it/s]Iter (sup_cont_loss=3.343): : 47it [00:01,  1.42it/s]Iter (sup_cont_loss=3.290): : 47it [00:01,  1.42it/s]Iter (sup_cont_loss=3.290): : 48it [00:02,  1.42it/s]Iter (sup_cont_loss=3.264): : 48it [00:02,  1.42it/s]Iter (sup_cont_loss=3.264): : 49it [00:02,  1.41it/s]Iter (sup_cont_loss=3.228): : 49it [00:03,  1.41it/s]Iter (sup_cont_loss=3.228): : 50it [00:03,  1.42it/s]Iter (sup_cont_loss=3.211): : 50it [00:04,  1.42it/s]Iter (sup_cont_loss=3.211): : 51it [00:04,  1.42it/s]Iter (sup_cont_loss=3.267): : 51it [00:04,  1.42it/s]Iter (sup_cont_loss=3.267): : 52it [00:04,  1.42it/s]Iter (sup_cont_loss=3.337): : 52it [00:05,  1.42it/s]Iter (sup_cont_loss=3.337): : 53it [00:05,  1.42it/s]Iter (sup_cont_loss=3.306): : 53it [00:06,  1.42it/s]Iter (sup_cont_loss=3.306): : 54it [00:06,  1.42it/s]Iter (sup_cont_loss=3.197): : 54it [00:06,  1.42it/s]Iter (sup_cont_loss=3.197): : 55it [00:07,  1.42it/s]Iter (sup_cont_loss=3.251): : 55it [00:07,  1.42it/s]Iter (sup_cont_loss=3.251): : 56it [00:07,  1.42it/s]Iter (sup_cont_loss=3.153): : 56it [00:08,  1.42it/s]Iter (sup_cont_loss=3.153): : 57it [00:08,  1.42it/s]Iter (sup_cont_loss=3.160): : 57it [00:08,  1.42it/s]Iter (sup_cont_loss=3.160): : 58it [00:09,  1.42it/s]Iter (sup_cont_loss=3.076): : 58it [00:09,  1.42it/s]Iter (sup_cont_loss=3.076): : 59it [00:09,  1.42it/s]Iter (sup_cont_loss=3.153): : 59it [00:10,  1.42it/s]Iter (sup_cont_loss=3.153): : 60it [00:10,  1.75it/s]Iter (sup_cont_loss=3.153): : 60it [00:10,  1.48it/s]
+Epoch: [3]: Loss 3.3642
+Iter (sup_loss): 60it [00:00, ?it/s]Iter (sup_cont_loss=3.210): : 60it [00:00, ?it/s]Iter (sup_cont_loss=3.210): : 61it [00:00,  1.42it/s]Iter (sup_cont_loss=3.116): : 61it [00:01,  1.42it/s]Iter (sup_cont_loss=3.116): : 62it [00:01,  1.41it/s]Iter (sup_cont_loss=3.009): : 62it [00:01,  1.41it/s]Iter (sup_cont_loss=3.009): : 63it [00:02,  1.42it/s]Iter (sup_cont_loss=2.971): : 63it [00:02,  1.42it/s]Iter (sup_cont_loss=2.971): : 64it [00:02,  1.41it/s]Iter (sup_cont_loss=3.007): : 64it [00:03,  1.41it/s]Iter (sup_cont_loss=3.007): : 65it [00:03,  1.41it/s]Iter (sup_cont_loss=2.843): : 65it [00:04,  1.41it/s]Iter (sup_cont_loss=2.843): : 66it [00:04,  1.40it/s]Iter (sup_cont_loss=2.958): : 66it [00:04,  1.40it/s]Iter (sup_cont_loss=2.958): : 67it [00:04,  1.40it/s]Iter (sup_cont_loss=3.029): : 67it [00:05,  1.40it/s]Iter (sup_cont_loss=3.029): : 68it [00:05,  1.40it/s]Iter (sup_cont_loss=2.985): : 68it [00:06,  1.40it/s]Iter (sup_cont_loss=2.985): : 69it [00:06,  1.40it/s]Iter (sup_cont_loss=2.959): : 69it [00:06,  1.40it/s]Iter (sup_cont_loss=2.959): : 70it [00:07,  1.40it/s]Iter (sup_cont_loss=3.108): : 70it [00:07,  1.40it/s]Iter (sup_cont_loss=3.108): : 71it [00:07,  1.40it/s]Iter (sup_cont_loss=2.936): : 71it [00:08,  1.40it/s]Iter (sup_cont_loss=2.936): : 72it [00:08,  1.41it/s]Iter (sup_cont_loss=2.817): : 72it [00:09,  1.41it/s]Iter (sup_cont_loss=2.817): : 73it [00:09,  1.41it/s]Iter (sup_cont_loss=2.817): : 73it [00:09,  1.35it/s]
+Traceback (most recent call last):
+  File "/content/bolt-reproduction-gpu/results/work/mask/knncon_0.25_0/KnnCon/run_main.py", line 436, in <module>
+    main()
+  File "/content/bolt-reproduction-gpu/results/work/mask/knncon_0.25_0/KnnCon/run_main.py", line 387, in main
+    trainer.train_mocoknn(
+  File "/content/bolt-reproduction-gpu/results/work/mask/knncon_0.25_0/KnnCon/trainer.py", line 727, in train_mocoknn
+    outputs = model(inputs, mode="train", positive_sample=positive_sample)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/content/bolt-reproduction-gpu/.venv-torch/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/content/bolt-reproduction-gpu/.venv-torch/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1750, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/content/bolt-reproduction-gpu/results/work/mask/knncon_0.25_0/KnnCon/model.py", line 516, in forward
+    return self.forward_no_multi_v2(query=query, positive_sample=positive_sample, negative_sample=negative_sample)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/content/bolt-reproduction-gpu/results/work/mask/knncon_0.25_0/KnnCon/model.py", line 430, in forward_no_multi_v2
+    bert_output_q = self.encoder_q(**query)
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/content/bolt-reproduction-gpu/.venv-torch/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/content/bolt-reproduction-gpu/.venv-torch/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1750, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/content/bolt-reproduction-gpu/.venv-torch/lib/python3.11/site-packages/transformers/models/bert/modeling_bert.py", line 1020, in forward
+    encoder_outputs = self.encoder(
+                      ^^^^^^^^^^^^^
+  File "/content/bolt-reproduction-gpu/.venv-torch/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/content/bolt-reproduction-gpu/.venv-torch/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1750, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/content/bolt-reproduction-gpu/.venv-torch/lib/python3.11/site-packages/transformers/models/bert/modeling_bert.py", line 610, in forward
+    layer_outputs = layer_module(
+                    ^^^^^^^^^^^^^
+  File "/content/bolt-reproduction-gpu/.venv-torch/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/content/bolt-reproduction-gpu/.venv-torch/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1750, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/content/bolt-reproduction-gpu/.venv-torch/lib/python3.11/site-packages/transformers/models/bert/modeling_bert.py", line 537, in forward
+    layer_output = apply_chunking_to_forward(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/content/bolt-reproduction-gpu/.venv-torch/lib/python3.11/site-packages/transformers/pytorch_utils.py", line 237, in apply_chunking_to_forward
+    return forward_fn(*input_tensors)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/content/bolt-reproduction-gpu/.venv-torch/lib/python3.11/site-packages/transformers/models/bert/modeling_bert.py", line 550, in feed_forward_chunk
+    layer_output = self.output(intermediate_output, attention_output)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/content/bolt-reproduction-gpu/.venv-torch/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/content/bolt-reproduction-gpu/.venv-torch/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1750, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/content/bolt-reproduction-gpu/.venv-torch/lib/python3.11/site-packages/transformers/models/bert/modeling_bert.py", line 463, in forward
+    hidden_states = self.dropout(hidden_states)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/content/bolt-reproduction-gpu/.venv-torch/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/content/bolt-reproduction-gpu/.venv-torch/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1750, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/content/bolt-reproduction-gpu/.venv-torch/lib/python3.11/site-packages/torch/nn/modules/dropout.py", line 70, in forward
+    return F.dropout(input, self.p, self.training, self.inplace)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/content/bolt-reproduction-gpu/.venv-torch/lib/python3.11/site-packages/torch/nn/functional.py", line 1425, in dropout
+    _VF.dropout_(input, p, training) if inplace else _VF.dropout(input, p, training)
+                                                     ^^^^^^^^^^^
+  File "/content/bolt-reproduction-gpu/.venv-torch/lib/python3.11/site-packages/torch/_VF.py", line 27, in __getattr__
+    def __getattr__(self, name: str) -> object:
+
+KeyboardInterrupt

@@ -1,0 +1,689 @@
+Using the `WANDB_DISABLED` environment variable is deprecated and will be removed in v5. Use the --report_to flag to control the integrations used for logging result (for instance --report_to none).
+Using the `WANDB_DISABLED` environment variable is deprecated and will be removed in v5. Use the --report_to flag to control the integrations used for logging result (for instance --report_to none).
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/model.py:622: SyntaxWarning: "is not" with a literal. Did you mean "!="?
+  if stage is not 'sup' or mode == 'finetune':
+/content/bolt-reproduction-gpu/.venv-torch/lib/python3.11/site-packages/huggingface_hub/file_download.py:949: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+Some weights of the model checkpoint at google-bert/bert-base-uncased were not used when initializing BertModel: ['cls.predictions.transform.dense.weight', 'cls.predictions.transform.LayerNorm.weight', 'cls.predictions.transform.LayerNorm.bias', 'cls.seq_relationship.weight', 'cls.predictions.bias', 'cls.seq_relationship.bias', 'cls.predictions.transform.dense.bias']
+- This IS expected if you are initializing BertModel from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing BertModel from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of the model checkpoint at google-bert/bert-base-uncased were not used when initializing BertModel: ['cls.predictions.transform.dense.weight', 'cls.predictions.transform.LayerNorm.weight', 'cls.predictions.transform.LayerNorm.bias', 'cls.seq_relationship.weight', 'cls.predictions.bias', 'cls.seq_relationship.bias', 'cls.predictions.transform.dense.bias']
+- This IS expected if you are initializing BertModel from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing BertModel from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Map:   0%|          | 0/229 [00:00<?, ? examples/s]Map: 100%|██████████| 229/229 [00:00<00:00, 6859.07 examples/s]
+Map:   0%|          | 0/28 [00:00<?, ? examples/s]Map: 100%|██████████| 28/28 [00:00<00:00, 3702.76 examples/s]
+Map:   0%|          | 0/742 [00:00<?, ? examples/s]Map: 100%|██████████| 742/742 [00:00<00:00, 7954.54 examples/s]
+Map:   0%|          | 0/3080 [00:00<?, ? examples/s]Map:  32%|███▏      | 1000/3080 [00:00<00:00, 7528.51 examples/s]Map:  65%|██████▍   | 2000/3080 [00:00<00:00, 8393.77 examples/s]Map:  97%|█████████▋| 3000/3080 [00:00<00:00, 8515.34 examples/s]Map: 100%|██████████| 3080/3080 [00:00<00:00, 8231.87 examples/s]
+Iter (sup_loss):   0%|          | 0/15 [00:00<?, ?it/s]Iter (sup_cont_loss=3.450):   0%|          | 0/15 [00:00<?, ?it/s]Iter (sup_cont_loss=3.450):   7%|▋         | 1/15 [00:01<00:14,  1.04s/it]Iter (sup_cont_loss=3.411):   7%|▋         | 1/15 [00:01<00:14,  1.04s/it]Iter (sup_cont_loss=3.411):  13%|█▎        | 2/15 [00:01<00:11,  1.16it/s]Iter (sup_cont_loss=3.324):  13%|█▎        | 2/15 [00:02<00:11,  1.16it/s]Iter (sup_cont_loss=3.324):  20%|██        | 3/15 [00:02<00:09,  1.25it/s]Iter (sup_cont_loss=3.376):  20%|██        | 3/15 [00:03<00:09,  1.25it/s]Iter (sup_cont_loss=3.376):  27%|██▋       | 4/15 [00:03<00:08,  1.29it/s]Iter (sup_cont_loss=3.411):  27%|██▋       | 4/15 [00:03<00:08,  1.29it/s]Iter (sup_cont_loss=3.411):  33%|███▎      | 5/15 [00:03<00:07,  1.31it/s]Iter (sup_cont_loss=3.432):  33%|███▎      | 5/15 [00:04<00:07,  1.31it/s]Iter (sup_cont_loss=3.432):  40%|████      | 6/15 [00:04<00:06,  1.33it/s]Iter (sup_cont_loss=3.429):  40%|████      | 6/15 [00:05<00:06,  1.33it/s]Iter (sup_cont_loss=3.429):  47%|████▋     | 7/15 [00:05<00:05,  1.33it/s]Iter (sup_cont_loss=3.475):  47%|████▋     | 7/15 [00:05<00:05,  1.33it/s]Iter (sup_cont_loss=3.475):  53%|█████▎    | 8/15 [00:06<00:05,  1.34it/s]Iter (sup_cont_loss=3.437):  53%|█████▎    | 8/15 [00:06<00:05,  1.34it/s]Iter (sup_cont_loss=3.437):  60%|██████    | 9/15 [00:06<00:04,  1.33it/s]Iter (sup_cont_loss=3.493):  60%|██████    | 9/15 [00:07<00:04,  1.33it/s]Iter (sup_cont_loss=3.493):  67%|██████▋   | 10/15 [00:07<00:03,  1.33it/s]Iter (sup_cont_loss=3.447):  67%|██████▋   | 10/15 [00:08<00:03,  1.33it/s]Iter (sup_cont_loss=3.447):  73%|███████▎  | 11/15 [00:08<00:03,  1.33it/s]Iter (sup_cont_loss=3.516):  73%|███████▎  | 11/15 [00:08<00:03,  1.33it/s]Iter (sup_cont_loss=3.516):  80%|████████  | 12/15 [00:09<00:02,  1.33it/s]Iter (sup_cont_loss=3.462):  80%|████████  | 12/15 [00:09<00:02,  1.33it/s]Iter (sup_cont_loss=3.462):  87%|████████▋ | 13/15 [00:09<00:01,  1.33it/s]Iter (sup_cont_loss=3.459):  87%|████████▋ | 13/15 [00:10<00:01,  1.33it/s]Iter (sup_cont_loss=3.459):  93%|█████████▎| 14/15 [00:10<00:00,  1.33it/s]Iter (sup_cont_loss=3.484):  93%|█████████▎| 14/15 [00:10<00:00,  1.33it/s]Iter (sup_cont_loss=3.484): 100%|██████████| 15/15 [00:11<00:00,  1.64it/s]Iter (sup_cont_loss=3.484): 100%|██████████| 15/15 [00:11<00:00,  1.36it/s]
+Epoch: [0]: Loss 3.4403
+Iter (sup_loss): 100%|██████████| 15/15 [00:00<?, ?it/s]Iter (sup_cont_loss=3.358): 100%|██████████| 15/15 [00:00<?, ?it/s]Iter (sup_cont_loss=3.358): : 16it [00:00,  1.32it/s]              Iter (sup_cont_loss=3.379): : 16it [00:01,  1.32it/s]Iter (sup_cont_loss=3.379): : 17it [00:01,  1.31it/s]Iter (sup_cont_loss=3.431): : 17it [00:02,  1.31it/s]Iter (sup_cont_loss=3.431): : 18it [00:02,  1.31it/s]Iter (sup_cont_loss=3.358): : 18it [00:02,  1.31it/s]Iter (sup_cont_loss=3.358): : 19it [00:03,  1.31it/s]Iter (sup_cont_loss=3.361): : 19it [00:03,  1.31it/s]Iter (sup_cont_loss=3.361): : 20it [00:03,  1.31it/s]Iter (sup_cont_loss=3.419): : 20it [00:04,  1.31it/s]Iter (sup_cont_loss=3.419): : 21it [00:04,  1.30it/s]Iter (sup_cont_loss=3.310): : 21it [00:05,  1.30it/s]Iter (sup_cont_loss=3.310): : 22it [00:05,  1.30it/s]Iter (sup_cont_loss=3.341): : 22it [00:05,  1.30it/s]Iter (sup_cont_loss=3.341): : 23it [00:06,  1.30it/s]Iter (sup_cont_loss=3.381): : 23it [00:06,  1.30it/s]Iter (sup_cont_loss=3.381): : 24it [00:06,  1.29it/s]Iter (sup_cont_loss=3.368): : 24it [00:07,  1.29it/s]Iter (sup_cont_loss=3.368): : 25it [00:07,  1.29it/s]Iter (sup_cont_loss=3.373): : 25it [00:08,  1.29it/s]Iter (sup_cont_loss=3.373): : 26it [00:08,  1.31it/s]Iter (sup_cont_loss=3.360): : 26it [00:08,  1.31it/s]Iter (sup_cont_loss=3.360): : 27it [00:09,  1.30it/s]Iter (sup_cont_loss=3.352): : 27it [00:09,  1.30it/s]Iter (sup_cont_loss=3.352): : 28it [00:10,  1.29it/s]Iter (sup_cont_loss=3.296): : 28it [00:10,  1.29it/s]Iter (sup_cont_loss=3.296): : 29it [00:10,  1.28it/s]Iter (sup_cont_loss=3.417): : 29it [00:10,  1.28it/s]Iter (sup_cont_loss=3.417): : 30it [00:11,  1.58it/s]Iter (sup_cont_loss=3.417): : 30it [00:11,  1.35it/s]
+Epoch: [1]: Loss 3.4036
+Iter (sup_loss): 30it [00:00, ?it/s]Iter (sup_cont_loss=3.361): : 30it [00:00, ?it/s]Iter (sup_cont_loss=3.361): : 31it [00:00,  1.26it/s]Iter (sup_cont_loss=3.211): : 31it [00:01,  1.26it/s]Iter (sup_cont_loss=3.211): : 32it [00:01,  1.26it/s]Iter (sup_cont_loss=3.230): : 32it [00:02,  1.26it/s]Iter (sup_cont_loss=3.230): : 33it [00:02,  1.26it/s]Iter (sup_cont_loss=3.193): : 33it [00:02,  1.26it/s]Iter (sup_cont_loss=3.193): : 34it [00:03,  1.26it/s]Iter (sup_cont_loss=3.262): : 34it [00:03,  1.26it/s]Iter (sup_cont_loss=3.262): : 35it [00:03,  1.26it/s]Iter (sup_cont_loss=3.200): : 35it [00:04,  1.26it/s]Iter (sup_cont_loss=3.200): : 36it [00:04,  1.25it/s]Iter (sup_cont_loss=3.140): : 36it [00:05,  1.25it/s]Iter (sup_cont_loss=3.140): : 37it [00:05,  1.25it/s]Iter (sup_cont_loss=3.166): : 37it [00:06,  1.25it/s]Iter (sup_cont_loss=3.166): : 38it [00:06,  1.25it/s]Iter (sup_cont_loss=3.156): : 38it [00:06,  1.25it/s]Iter (sup_cont_loss=3.156): : 39it [00:07,  1.25it/s]Iter (sup_cont_loss=3.195): : 39it [00:07,  1.25it/s]Iter (sup_cont_loss=3.195): : 40it [00:07,  1.24it/s]Iter (sup_cont_loss=3.119): : 40it [00:08,  1.24it/s]Iter (sup_cont_loss=3.119): : 41it [00:08,  1.24it/s]Iter (sup_cont_loss=3.104): : 41it [00:09,  1.24it/s]Iter (sup_cont_loss=3.104): : 42it [00:09,  1.24it/s]Iter (sup_cont_loss=3.121): : 42it [00:10,  1.24it/s]Iter (sup_cont_loss=3.121): : 43it [00:10,  1.24it/s]Iter (sup_cont_loss=3.029): : 43it [00:11,  1.24it/s]Iter (sup_cont_loss=3.029): : 44it [00:11,  1.24it/s]Iter (sup_cont_loss=3.026): : 44it [00:11,  1.24it/s]Iter (sup_cont_loss=3.026): : 45it [00:11,  1.53it/s]Iter (sup_cont_loss=3.026): : 45it [00:11,  1.30it/s]
+Epoch: [2]: Loss 3.3250
+Iter (sup_loss): 45it [00:00, ?it/s]Iter (sup_cont_loss=3.088): : 45it [00:00, ?it/s]Iter (sup_cont_loss=3.088): : 46it [00:00,  1.23it/s]Iter (sup_cont_loss=3.096): : 46it [00:01,  1.23it/s]Iter (sup_cont_loss=3.096): : 47it [00:01,  1.24it/s]Iter (sup_cont_loss=3.048): : 47it [00:02,  1.24it/s]Iter (sup_cont_loss=3.048): : 48it [00:02,  1.24it/s]Iter (sup_cont_loss=2.973): : 48it [00:02,  1.24it/s]Iter (sup_cont_loss=2.973): : 49it [00:03,  1.24it/s]Iter (sup_cont_loss=2.961): : 49it [00:03,  1.24it/s]Iter (sup_cont_loss=2.961): : 50it [00:04,  1.24it/s]Iter (sup_cont_loss=2.971): : 50it [00:04,  1.24it/s]Iter (sup_cont_loss=2.971): : 51it [00:04,  1.25it/s]Iter (sup_cont_loss=3.039): : 51it [00:05,  1.25it/s]Iter (sup_cont_loss=3.039): : 52it [00:05,  1.25it/s]Iter (sup_cont_loss=3.061): : 52it [00:06,  1.25it/s]Iter (sup_cont_loss=3.061): : 53it [00:06,  1.25it/s]Iter (sup_cont_loss=2.945): : 53it [00:06,  1.25it/s]Iter (sup_cont_loss=2.945): : 54it [00:07,  1.26it/s]Iter (sup_cont_loss=2.982): : 54it [00:07,  1.26it/s]Iter (sup_cont_loss=2.982): : 55it [00:07,  1.26it/s]Iter (sup_cont_loss=2.873): : 55it [00:08,  1.26it/s]Iter (sup_cont_loss=2.873): : 56it [00:08,  1.27it/s]Iter (sup_cont_loss=2.808): : 56it [00:09,  1.27it/s]Iter (sup_cont_loss=2.808): : 57it [00:09,  1.27it/s]Iter (sup_cont_loss=2.875): : 57it [00:10,  1.27it/s]Iter (sup_cont_loss=2.875): : 58it [00:10,  1.27it/s]Iter (sup_cont_loss=3.047): : 58it [00:10,  1.27it/s]Iter (sup_cont_loss=3.047): : 59it [00:11,  1.27it/s]Iter (sup_cont_loss=3.070): : 59it [00:11,  1.27it/s]Iter (sup_cont_loss=3.070): : 60it [00:11,  1.57it/s]Iter (sup_cont_loss=3.070): : 60it [00:11,  1.31it/s]
+Epoch: [3]: Loss 3.2410
+Iter (sup_loss): 60it [00:00, ?it/s]Iter (sup_cont_loss=2.933): : 60it [00:00, ?it/s]Iter (sup_cont_loss=2.933): : 61it [00:00,  1.27it/s]Iter (sup_cont_loss=2.940): : 61it [00:01,  1.27it/s]Iter (sup_cont_loss=2.940): : 62it [00:01,  1.27it/s]Iter (sup_cont_loss=2.912): : 62it [00:02,  1.27it/s]Iter (sup_cont_loss=2.912): : 63it [00:02,  1.28it/s]Iter (sup_cont_loss=2.843): : 63it [00:02,  1.28it/s]Iter (sup_cont_loss=2.843): : 64it [00:03,  1.29it/s]Iter (sup_cont_loss=2.808): : 64it [00:03,  1.29it/s]Iter (sup_cont_loss=2.808): : 65it [00:03,  1.29it/s]Iter (sup_cont_loss=2.938): : 65it [00:04,  1.29it/s]Iter (sup_cont_loss=2.938): : 66it [00:04,  1.29it/s]Iter (sup_cont_loss=2.885): : 66it [00:05,  1.29it/s]Iter (sup_cont_loss=2.885): : 67it [00:05,  1.29it/s]Iter (sup_cont_loss=2.717): : 67it [00:05,  1.29it/s]Iter (sup_cont_loss=2.717): : 68it [00:06,  1.29it/s]Iter (sup_cont_loss=2.616): : 68it [00:06,  1.29it/s]Iter (sup_cont_loss=2.616): : 69it [00:06,  1.30it/s]Iter (sup_cont_loss=2.858): : 69it [00:07,  1.30it/s]Iter (sup_cont_loss=2.858): : 70it [00:07,  1.30it/s]Iter (sup_cont_loss=2.864): : 70it [00:08,  1.30it/s]Iter (sup_cont_loss=2.864): : 71it [00:08,  1.30it/s]Iter (sup_cont_loss=2.826): : 71it [00:09,  1.30it/s]Iter (sup_cont_loss=2.826): : 72it [00:09,  1.31it/s]Iter (sup_cont_loss=2.830): : 72it [00:09,  1.31it/s]Iter (sup_cont_loss=2.830): : 73it [00:10,  1.31it/s]Iter (sup_cont_loss=2.850): : 73it [00:10,  1.31it/s]Iter (sup_cont_loss=2.850): : 74it [00:10,  1.31it/s]Iter (sup_cont_loss=2.927): : 74it [00:10,  1.31it/s]Iter (sup_cont_loss=2.927): : 75it [00:11,  1.62it/s]Iter (sup_cont_loss=2.927): : 75it [00:11,  1.36it/s]
+Epoch: [4]: Loss 3.1627
+in-domain f1:0.34060150375939846
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+this is lof_cosine
+
+Results have been saved to: /content/bolt-reproduction-gpu/results/short_5epoch/mask/knncon_0.25_0/results.csv
+Appended new result row for setting 'lof_cosine':
+   dataset  seed  ...   N-F1                                               args
+0  banking  2025  ...  14.34  {"output_dir": "/content/bolt-reproduction-gpu...
+
+[1 rows x 9 columns]
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+/content/bolt-reproduction-gpu/results/short_5epoch/work/mask/knncon_0.25_0/KnnCon/utils.py:49: RuntimeWarning: invalid value encountered in scalar divide
+  acc_ood = (correct[-1] / total[-1] * 100).round(2)
+this is lof_euclidean
+
+Results have been saved to: /content/bolt-reproduction-gpu/results/short_5epoch/mask/knncon_0.25_0/results.csv
+Appended new result row for setting 'lof_euclidean':
+   dataset  seed  ...  N-F1                                               args
+0  banking  2025  ...     0  {"output_dir": "/content/bolt-reproduction-gpu...
+
+[1 rows x 9 columns]

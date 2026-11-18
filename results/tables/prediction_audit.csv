@@ -1,0 +1,17 @@
+trial,detector,test_rows,verified
+full/deepunk_0.25_0,lof,3080,True
+full/deepunk_0.25_1,lof,3080,True
+full/deepunk_0.25_2,lof,3080,True
+full/deepunk_0.25_3,lof,3080,True
+full/deepunk_0.25_4,lof,3080,True
+full/deepunk_0.5_0,lof,3080,True
+full/deepunk_0.5_1,lof,3080,True
+full/deepunk_0.5_2,lof,3080,True
+full/deepunk_0.5_3,lof,3080,True
+full/deepunk_0.5_4,lof,3080,True
+quick/knncon_0.25_0,lof_cosine,3080,True
+quick/knncon_0.25_0,lof_euclidean,3080,True
+short_5epoch/full/knncon_0.25_0,lof_cosine,3080,True
+short_5epoch/full/knncon_0.25_0,lof_euclidean,3080,True
+short_5epoch/mask/knncon_0.25_0,lof_cosine,3080,True
+short_5epoch/mask/knncon_0.25_0,lof_euclidean,3080,True

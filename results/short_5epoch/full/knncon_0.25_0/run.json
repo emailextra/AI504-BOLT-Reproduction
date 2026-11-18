@@ -1,0 +1,33 @@
+{
+  "command": [
+    "/content/bolt-reproduction-gpu/.venv-torch/bin/python",
+    "/content/bolt-reproduction-gpu/results/short_5epoch/work/full/knncon_0.25_0/KnnCon/run_main.py",
+    "--config",
+    "/content/bolt-reproduction-gpu/.bolt-pinned/configs/openset/knncon.yaml",
+    "--dataset",
+    "banking",
+    "--known_cls_ratio",
+    "0.25",
+    "--labeled_ratio",
+    "0.1",
+    "--fold_idx",
+    "0",
+    "--fold_num",
+    "5",
+    "--fold_type",
+    "fold",
+    "--seed",
+    "2025",
+    "--num_train_epochs",
+    "5",
+    "--output_dir",
+    "/content/bolt-reproduction-gpu/results/short_5epoch/work/full/knncon_0.25_0/checkpoints",
+    "--save_results_path",
+    "/content/bolt-reproduction-gpu/results/short_5epoch/full/knncon_0.25_0",
+    "--bert_model",
+    "google-bert/bert-base-uncased"
+  ],
+  "elapsed_seconds": 620.76,
+  "upstream": "2c935438b5506febcfd23e499e3de81868236b17",
+  "mode": "full"
+}

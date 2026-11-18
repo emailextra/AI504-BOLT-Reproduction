@@ -1,0 +1,14 @@
+trial,seconds,epoch_cap
+full/deepunk_0.25_0,112.6,50
+full/deepunk_0.25_1,107.7,50
+full/deepunk_0.25_2,103.1,50
+full/deepunk_0.25_3,103.94,50
+full/deepunk_0.25_4,94.69,50
+full/deepunk_0.5_0,141.29,50
+full/deepunk_0.5_1,136.19,50
+full/deepunk_0.5_2,135.49,50
+full/deepunk_0.5_3,129.68,50
+full/deepunk_0.5_4,133.62,50
+quick/knncon_0.25_0,176.59,1
+short_5epoch/full/knncon_0.25_0,620.76,5
+short_5epoch/mask/knncon_0.25_0,100.8,5

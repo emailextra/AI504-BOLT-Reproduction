@@ -1,0 +1,5 @@
+method,known_ratio,K-F1,N-F1
+deepunk,0.25,37.49,4.16
+deepunk,0.5,48.99,31.21
+knncon,0.25,63.07,67.07
+knncon,0.5,77.67,58.30

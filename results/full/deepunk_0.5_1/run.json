@@ -1,0 +1,31 @@
+{
+  "command": [
+    "/content/bolt-reproduction-gpu/.venv-tf/bin/python",
+    "/content/bolt-reproduction-gpu/results/work/full/deepunk_0.5_1/DeepUnk/experiment.py",
+    "--config",
+    "/content/bolt-reproduction-gpu/.bolt-pinned/configs/openset/deepunk.yaml",
+    "--dataset",
+    "banking",
+    "--known_cls_ratio",
+    "0.5",
+    "--labeled_ratio",
+    "0.1",
+    "--fold_idx",
+    "1",
+    "--fold_num",
+    "5",
+    "--fold_type",
+    "fold",
+    "--seed",
+    "2025",
+    "--num_train_epochs",
+    "50",
+    "--output_dir",
+    "/content/bolt-reproduction-gpu/results/work/full/deepunk_0.5_1/checkpoints",
+    "--save_results_path",
+    "/content/bolt-reproduction-gpu/results/full/deepunk_0.5_1"
+  ],
+  "elapsed_seconds": 136.19,
+  "upstream": "2c935438b5506febcfd23e499e3de81868236b17",
+  "mode": "full"
+}

@@ -1,0 +1,4 @@
+test_row,raw_gold,gold,predicted
+0,exchange_via_app,unseen,fiat_currency_support
+2,fiat_currency_support,fiat_currency_support,beneficiary_not_allowed
+41,verify_source_of_funds,verify_source_of_funds,unseen

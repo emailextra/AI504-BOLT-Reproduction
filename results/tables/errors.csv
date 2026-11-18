@@ -1,0 +1,65 @@
+trial,detector,category,count
+full/deepunk_0.25_0,lof,correct,578
+full/deepunk_0.25_0,lof,unknown accepted,2306
+full/deepunk_0.25_0,lof,known rejected,18
+full/deepunk_0.25_0,lof,wrong known class,178
+full/deepunk_0.25_1,lof,correct,579
+full/deepunk_0.25_1,lof,unknown accepted,2303
+full/deepunk_0.25_1,lof,known rejected,17
+full/deepunk_0.25_1,lof,wrong known class,181
+full/deepunk_0.25_2,lof,correct,624
+full/deepunk_0.25_2,lof,unknown accepted,2284
+full/deepunk_0.25_2,lof,known rejected,5
+full/deepunk_0.25_2,lof,wrong known class,167
+full/deepunk_0.25_3,lof,correct,564
+full/deepunk_0.25_3,lof,unknown accepted,2320
+full/deepunk_0.25_3,lof,known rejected,11
+full/deepunk_0.25_3,lof,wrong known class,185
+full/deepunk_0.25_4,lof,correct,575
+full/deepunk_0.25_4,lof,unknown accepted,2317
+full/deepunk_0.25_4,lof,known rejected,4
+full/deepunk_0.25_4,lof,wrong known class,184
+full/deepunk_0.5_0,lof,correct,1400
+full/deepunk_0.5_0,lof,unknown accepted,1097
+full/deepunk_0.5_0,lof,known rejected,191
+full/deepunk_0.5_0,lof,wrong known class,392
+full/deepunk_0.5_1,lof,correct,1336
+full/deepunk_0.5_1,lof,unknown accepted,1216
+full/deepunk_0.5_1,lof,known rejected,154
+full/deepunk_0.5_1,lof,wrong known class,374
+full/deepunk_0.5_2,lof,correct,1306
+full/deepunk_0.5_2,lof,unknown accepted,1132
+full/deepunk_0.5_2,lof,known rejected,284
+full/deepunk_0.5_2,lof,wrong known class,358
+full/deepunk_0.5_3,lof,correct,994
+full/deepunk_0.5_3,lof,unknown accepted,1455
+full/deepunk_0.5_3,lof,known rejected,175
+full/deepunk_0.5_3,lof,wrong known class,456
+full/deepunk_0.5_4,lof,correct,1363
+full/deepunk_0.5_4,lof,unknown accepted,1096
+full/deepunk_0.5_4,lof,known rejected,260
+full/deepunk_0.5_4,lof,wrong known class,361
+quick/knncon_0.25_0,lof_cosine,correct,1417
+quick/knncon_0.25_0,lof_cosine,unknown accepted,1435
+quick/knncon_0.25_0,lof_cosine,known rejected,40
+quick/knncon_0.25_0,lof_cosine,wrong known class,188
+quick/knncon_0.25_0,lof_euclidean,correct,1217
+quick/knncon_0.25_0,lof_euclidean,unknown accepted,1640
+quick/knncon_0.25_0,lof_euclidean,known rejected,30
+quick/knncon_0.25_0,lof_euclidean,wrong known class,193
+short_5epoch/full/knncon_0.25_0,lof_cosine,correct,2333
+short_5epoch/full/knncon_0.25_0,lof_cosine,unknown accepted,691
+short_5epoch/full/knncon_0.25_0,lof_cosine,known rejected,44
+short_5epoch/full/knncon_0.25_0,lof_cosine,wrong known class,12
+short_5epoch/full/knncon_0.25_0,lof_euclidean,correct,1665
+short_5epoch/full/knncon_0.25_0,lof_euclidean,unknown accepted,1381
+short_5epoch/full/knncon_0.25_0,lof_euclidean,known rejected,15
+short_5epoch/full/knncon_0.25_0,lof_euclidean,wrong known class,19
+short_5epoch/mask/knncon_0.25_0,lof_cosine,correct,419
+short_5epoch/mask/knncon_0.25_0,lof_cosine,unknown accepted,2137
+short_5epoch/mask/knncon_0.25_0,lof_cosine,known rejected,50
+short_5epoch/mask/knncon_0.25_0,lof_cosine,wrong known class,474
+short_5epoch/mask/knncon_0.25_0,lof_euclidean,correct,252
+short_5epoch/mask/knncon_0.25_0,lof_euclidean,unknown accepted,2320
+short_5epoch/mask/knncon_0.25_0,lof_euclidean,known rejected,0
+short_5epoch/mask/knncon_0.25_0,lof_euclidean,wrong known class,508

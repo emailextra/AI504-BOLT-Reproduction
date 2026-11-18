@@ -1,0 +1,262 @@
+Wed Nov 18 06:14:08 2026       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 580.82.07              Driver Version: 580.82.07      CUDA Version: 13.0     |
++-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  Tesla T4                       Off |   00000000:00:04.0 Off |                    0 |
+| N/A   33C    P8              9W /   70W |       0MiB /  15360MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|  No running processes found                                                             |
++-----------------------------------------------------------------------------------------+
+Python 3.11.14 (main, Dec 17 2025, 21:07:37) [Clang 21.1.4 ]
+Using Python 3.11.14 environment at: bolt-reproduction-gpu/.venv-torch
+aiohappyeyeballs==2.7.1
+aiohttp==3.14.5
+aiosignal==1.4.0
+attrs==26.1.0
+blinker==1.9.0
+certifi==2026.10.23
+charset-normalizer==3.5.2
+click==8.5.1
+cloudpickle==3.1.2
+contourpy==1.3.3
+cycler==0.12.1
+datasets==2.21.0
+dill==0.3.8
+docopt==0.6.2
+filelock==4.2.12
+fitlog==0.9.15
+flask==3.1.3
+fonttools==4.68.0
+frozenlist==1.8.0
+fsspec==2024.6.1
+gitdb==4.0.12
+gitpython==3.2.1
+hf-xet==1.8.0
+huggingface-hub==0.36.2
+idna==3.20
+itsdangerous==2.2.0
+jinja2==3.1.6
+joblib==1.6.0
+kiwisolver==1.5.1
+markupsafe==3.0.4
+matplotlib==3.9.4
+mpmath==1.3.0
+multidict==7.2.1
+multiprocess==0.70.16
+networkx==3.6.1
+numpy==1.26.4
+nvidia-cublas-cu12==12.4.5.8
+nvidia-cuda-cupti-cu12==12.4.127
+nvidia-cuda-nvrtc-cu12==12.4.127
+nvidia-cuda-runtime-cu12==12.4.127
+nvidia-cudnn-cu12==9.1.0.70
+nvidia-cufft-cu12==11.2.1.3
+nvidia-curand-cu12==10.3.5.147
+nvidia-cusolver-cu12==11.6.1.9
+nvidia-cusparse-cu12==12.3.1.170
+nvidia-cusparselt-cu12==0.6.2
+nvidia-nccl-cu12==2.21.5
+nvidia-nvjitlink-cu12==12.4.127
+nvidia-nvtx-cu12==12.4.127
+packaging==26.3
+pandas==2.2.3
+pillow==13.0.0
+propcache==0.5.4
+pyarrow==26.0.1
+pyparsing==3.3.3
+python-dateutil==4.0.0
+pytz==2026.6
+pyyaml==6.0.2
+regex==2026.11.18
+requests==2.34.2
+safetensors==0.8.0
+scikit-learn==1.5.2
+scipy==1.17.1
+smmap==5.0.3
+sympy==1.13.1
+threadpoolctl==3.8.0
+tokenizers==0.13.3
+torch==2.6.0
+tqdm==4.70.1
+transformers==4.30.2
+triton==3.2.0
+typing-extensions==4.16.0
+tzdata==2026.6
+urllib3==2.8.0
+werkzeug==3.1.9
+xxhash==4.1.0
+yarl==1.25.1
+Using Python 3.11.14 environment at: bolt-reproduction-gpu/.venv-tf
+absl-py==2.5.1
+astunparse==1.6.3
+certifi==2026.10.23
+charset-normalizer==3.5.2
+click==8.5.1
+cloudpickle==3.1.2
+contourpy==1.3.3
+cycler==0.12.1
+flatbuffers==25.12.19
+fonttools==4.68.0
+gast==0.7.0
+google-pasta==0.2.0
+grpcio==1.85.3
+h5py==3.16.0
+idna==3.20
+joblib==1.6.0
+keras==3.15.1
+kiwisolver==1.5.1
+libclang==18.1.1
+markdown==3.11.3
+markdown-it-py==4.3.0
+markupsafe==3.0.4
+matplotlib==3.9.4
+mdurl==0.1.2
+ml-dtypes==0.5.4
+namex==0.1.0
+nltk==3.9.2
+numpy==1.26.4
+nvidia-cublas-cu12==12.5.3.2
+nvidia-cuda-cupti-cu12==12.5.82
+nvidia-cuda-nvcc-cu12==12.5.82
+nvidia-cuda-nvrtc-cu12==12.5.82
+nvidia-cuda-runtime-cu12==12.5.82
+nvidia-cudnn-cu12==9.3.0.75
+nvidia-cufft-cu12==11.2.3.61
+nvidia-curand-cu12==10.3.6.82
+nvidia-cusolver-cu12==11.6.3.83
+nvidia-cusparse-cu12==12.5.1.3
+nvidia-nccl-cu12==2.21.5
+nvidia-nvjitlink-cu12==12.5.82
+opt-einsum==3.4.0
+optree==0.20.0
+packaging==26.3
+pandas==2.2.3
+pillow==13.0.0
+protobuf==5.29.6
+pygments==2.21.0
+pyparsing==3.3.3
+python-dateutil==4.0.0
+pytz==2026.6
+pyyaml==6.0.2
+regex==2026.11.18
+requests==2.34.2
+rich==15.0.0
+scikit-learn==1.5.2
+scipy==1.17.1
+setuptools==84.2.1
+six==1.17.0
+tensorboard==2.18.0
+tensorboard-data-server==0.7.2
+tensorflow==2.18.1
+tensorflow-io-gcs-filesystem==0.37.1
+termcolor==3.3.0
+tf-keras==2.18.0
+threadpoolctl==3.8.0
+tqdm==4.70.1
+typing-extensions==4.16.0
+tzdata==2026.6
+urllib3==2.8.0
+werkzeug==3.1.9
+wheel==0.48.0
+wrapt==2.5.2
+PyTorch GPU: Tesla T4 cuda:0
+2026-11-18 06:14:17.502819: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:477] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1794982457.521648    5069 cuda_dnn.cc:8310] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+E0000 00:00:1794982457.527550    5069 cuda_blas.cc:1418] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2026-11-18 06:14:17.547484: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2026-11-18 06:14:27.574935: W tensorflow/core/common_runtime/gpu/gpu_bfc_allocator.cc:47] Overriding orig_value setting because the TF_FORCE_GPU_ALLOW_GROWTH environment variable is set. Original config value was 0.
+I0000 00:00:1794982467.576392    5069 gpu_device.cc:2022] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 13757 MB memory:  -> device: 0, name: Tesla T4, pci bus id: 0000:00:04.0, compute capability: 7.5
+I0000 00:00:1794982470.353384    5124 cuda_dnn.cc:529] Loaded cuDNN version 90300
+TensorFlow LSTM GPU: /job:localhost/replica:0/task:0/device:GPU:0
+aiohappyeyeballs==2.7.1
+aiohttp==3.14.5
+aiosignal==1.4.0
+attrs==26.1.0
+blinker==1.9.0
+certifi==2026.10.23
+charset-normalizer==3.5.2
+click==8.5.1
+cloudpickle==3.1.2
+contourpy==1.3.3
+cycler==0.12.1
+datasets==2.21.0
+dill==0.3.8
+docopt==0.6.2
+filelock==4.2.12
+fitlog==0.9.15
+flask==3.1.3
+fonttools==4.68.0
+frozenlist==1.8.0
+fsspec==2024.6.1
+gitdb==4.0.12
+gitpython==3.2.1
+hf-xet==1.8.0
+huggingface-hub==0.36.2
+idna==3.20
+itsdangerous==2.2.0
+jinja2==3.1.6
+joblib==1.6.0
+kiwisolver==1.5.1
+markupsafe==3.0.4
+matplotlib==3.9.4
+mpmath==1.3.0
+multidict==7.2.1
+multiprocess==0.70.16
+networkx==3.6.1
+numpy==1.26.4
+nvidia-cublas-cu12==12.4.5.8
+nvidia-cuda-cupti-cu12==12.4.127
+nvidia-cuda-nvrtc-cu12==12.4.127
+nvidia-cuda-runtime-cu12==12.4.127
+nvidia-cudnn-cu12==9.1.0.70
+nvidia-cufft-cu12==11.2.1.3
+nvidia-curand-cu12==10.3.5.147
+nvidia-cusolver-cu12==11.6.1.9
+nvidia-cusparse-cu12==12.3.1.170
+nvidia-cusparselt-cu12==0.6.2
+nvidia-nccl-cu12==2.21.5
+nvidia-nvjitlink-cu12==12.4.127
+nvidia-nvtx-cu12==12.4.127
+packaging==26.3
+pandas==2.2.3
+pillow==13.0.0
+propcache==0.5.4
+pyarrow==17.0.0
+pyparsing==3.3.3
+python-dateutil==4.0.0
+pytz==2026.6
+pyyaml==6.0.2
+regex==2026.11.18
+requests==2.34.2
+safetensors==0.8.0
+scikit-learn==1.5.2
+scipy==1.17.1
+smmap==5.0.3
+sympy==1.13.1
+threadpoolctl==3.8.0
+tokenizers==0.13.3
+torch==2.6.0
+tqdm==4.70.1
+transformers==4.30.2
+triton==3.2.0
+typing-extensions==4.16.0
+tzdata==2026.6
+urllib3==2.8.0
+werkzeug==3.1.9
+xxhash==4.1.0
+yarl==1.25.1
+
+PyTorch environment after PyArrow fix:

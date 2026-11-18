@@ -1,0 +1,11 @@
+.bolt/
+.venv*/
+results/work/
+__pycache__/
+*.pyc
+**/work/
+submission/
+evidence/assignment_brief.pdf
+evidence/submission_guidelines.pdf
+.ci-data-audit/
+*.inspect.ndjson
