@@ -17,9 +17,10 @@
   "presentation_native_export": "PowerPoint PDF export and visual review completed",
   "repository_url": "https://github.com/emailextra/AI504-BOLT-Reproduction",
   "clean_linux_verification": "passed",
-  "clean_linux_verification_url": "https://github.com/emailextra/AI504-BOLT-Reproduction/actions/runs/44260136840",
+  "clean_linux_verification_url": "https://github.com/emailextra/AI504-BOLT-Reproduction/actions/runs/44261262019",
   "environment_pins": {
     "pytorch_packages": 77,
     "tensorflow_packages": 72
-  }
+  },
+  "pinned_environment_resolution": "passed on GitHub Linux runner"
 }

@@ -43,8 +43,9 @@ export async function build(p) {
   if(p.slides.items.length) p.slides.delete(p.slides.items.map(s=>s.id));
   let s=base(p,'Reproducing BOLT on BANKING77','AI504 Assignment 2 · Group number, names and IDs to be entered',1);
   text(s,'Open-set intent classification\nand a supervision-mask audit',64,205,1100,160,56,C.ink,true);
-  text(s,'Chuan Qin · Xi Chen · Jinpeng Li · Hengshu Zhu\nFindings of ACL 2026',64,415,1100,85,27,C.muted);
-  text(s,'Ten DeepUNK trials and a paired five-epoch KNNCon study',64,550,1120,52,27,C.blue);
+  text(s,'BOLT: Benchmarking Open-World Learning\nfor Text Classification',64,385,1120,82,29,C.blue,true);
+  text(s,'Chuan Qin · Xi Chen · Jinpeng Li · Hengshu Zhu\nFindings of ACL 2026',64,485,1100,72,25,C.muted);
+  text(s,'Ten DeepUNK trials and a paired five-epoch KNNCon study',64,580,1120,42,25,C.blue);
   note(s,60,'Introduce the original paper and explain the bounded reproduction. Enter actual group and member identification before presenting. Each member must speak for at least three minutes. Explain that requests can be meaningful banking questions while their intent category is unknown to the classifier.',[PAPER]);
 
   s=base(p,'The selected DeepUNK claim','Project | Report §1 and Table 1; code/published.csv',2);
